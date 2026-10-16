@@ -197,6 +197,12 @@ Cette partie démontre la mise en place d'un **pipeline CI/CD déclaratif** avec
 | Docker API | 3.7.1 |
 | + dépendances (jsch, javadoc, cloud-stats, etc.) |
 
+![Plugin Kubernetes](screenshots/17a-lab2-plugin-kubernetes.png)
+
+![Plugin Maven](screenshots/17b-lab2-plugin-maven.png)
+
+![Plugin Docker](screenshots/17c-lab2-plugin-docker.png)
+
 ### Outils globaux
 
 **Manage Jenkins** → **Global Tool Configuration** :
@@ -213,6 +219,8 @@ Cette partie démontre la mise en place d'un **pipeline CI/CD déclaratif** avec
 ## 📝 Jenkinsfile
 
 Le fichier `Jenkinsfile` est versionné dans le repo et lu par Jenkins :
+
+![Configuration du job Pipeline](screenshots/16-lab2-jenkinsfile-config.png)
 
 ```groovy
 pipeline {
@@ -294,3 +302,28 @@ pipeline {
     }
 }
 
+
+
+---
+
+## ✅ Résultat du build (Lab 2)
+
+Le pipeline `pipeline-scm-lab2` s'exécute avec succès en 6 étapes :
+
+
+![Pipeline SUCCESS](screenshots/13-lab2-pipeline-success.png)
+
+![Console Output](screenshots/14-lab2-console-output.png)
+
+![Pipeline Overview](screenshots/15-lab2-pipeline-overview.png)
+
+---
+
+## 🔄 Comparaison Lab 1 vs Lab 2
+
+| Aspect | Lab 1 (Freestyle) | Lab 2 (Pipeline) |
+|--------|-------------------|------------------|
+| Configuration | Interface Jenkins | `Jenkinsfile` versionné |
+| Versioning | ❌ | ✅ (dans Git) |
+| Reproductibilité | Manuelle | Automatique |
+| CI/CD moderne | Legacy | ✅ Standard |
