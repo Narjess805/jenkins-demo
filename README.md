@@ -1,4 +1,4 @@
-# 🚀 Jenkins Demo — Pipeline CI/CD
+#  Jenkins Demo — Pipeline CI/CD
 
 Application Spring Boot déployée automatiquement via un pipeline Jenkins complet : **Maven → Docker → Kubernetes (K3S)**.
 
@@ -9,7 +9,7 @@ Application Spring Boot déployée automatiquement via un pipeline Jenkins compl
 
 ---
 
-## 📖 Description
+##  Description
 
 Ce projet démontre un **pipeline CI/CD complet** :
 
@@ -22,13 +22,13 @@ Endpoints :
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 GitHub → Jenkins → Maven → Docker → K3S → Pods (x2) → NodePort 30090
 
 ---
 
-## 🛠️ Stack technique
+##  Stack technique
 
 | Composant | Version |
 |-----------|---------|
@@ -42,7 +42,7 @@ GitHub → Jenkins → Maven → Docker → K3S → Pods (x2) → NodePort 30090
 
 ---
 
-## ✅ Prérequis
+##  Prérequis
 
 - Ubuntu 22.04+
 - Docker installé
@@ -54,7 +54,7 @@ GitHub → Jenkins → Maven → Docker → K3S → Pods (x2) → NodePort 30090
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### 1. Cloner le projet
 
@@ -78,7 +78,7 @@ kubectl apply -f service.yaml
 
 ---
 
-## 🔄 Pipeline Jenkins
+##  Pipeline Jenkins
 
 Job : jenkins-demo-pipeline
 
@@ -96,7 +96,7 @@ Job : jenkins-demo-pipeline
 
 ---
 
-## 🧪 Vérifications
+##  Vérifications
 
 ### Pods et service
 
@@ -125,7 +125,7 @@ Ouvrir : http://192.168.56.101:30090/
 
 ---
 
-## 📁 Structure
+##  Structure
 
 jenkins-demo/
 ├── src/main/java/com/example/demo/
@@ -140,7 +140,7 @@ jenkins-demo/
 
 ---
 
-## 🐛 Problèmes résolus
+##  Problèmes résolus
 
 - Repo original 404 → création d'un projet Spring Boot
 - Docker Hub lent → import local via k3s ctr images import
@@ -150,7 +150,7 @@ jenkins-demo/
 
 ---
 
-## 👩💻 Auteur
+##  Auteur
 
 Narjess Dabbech
 📧 narjessdabbech3@gmail.com
@@ -160,19 +160,19 @@ Lab DevOps / CI-CD.
 
 ---
 
-## 📄 Licence
+##  Licence
 
 Projet pédagogique — libre d'utilisation.
 
 ---
 
-# 🎯 PARTIE 2 — Lab 2 : Jenkins Pipeline (Jenkinsfile)
+#  PARTIE 2 — Lab 2 : Jenkins Pipeline (Jenkinsfile)
 
 Cette partie démontre la mise en place d'un **pipeline CI/CD déclaratif** avec un `Jenkinsfile` versionné dans Git (approche moderne).
 
 ---
 
-## 📖 Objectifs du Lab 2
+##  Objectifs du Lab 2
 
 - Installer et configurer les plugins Jenkins (Kubernetes CLI, Maven Integration, Docker)
 - Configurer les outils globaux (JDK, Maven)
@@ -182,7 +182,7 @@ Cette partie démontre la mise en place d'un **pipeline CI/CD déclaratif** avec
 
 ---
 
-## 🔧 Configuration Jenkins (Lab 2)
+##  Configuration Jenkins (Lab 2)
 
 ### Plugins installés
 
@@ -216,7 +216,7 @@ Cette partie démontre la mise en place d'un **pipeline CI/CD déclaratif** avec
 
 ---
 
-## 📝 Jenkinsfile
+##  Jenkinsfile
 
 Le fichier `Jenkinsfile` est versionné dans le repo et lu par Jenkins :
 
